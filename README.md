@@ -4,7 +4,17 @@ Welcome to the EarthDay repository!
 
 ## Description
 
-This repository contains the source code for an Earth Day celebration web application. The application aims to raise awareness about environmental issues and inspire action to protect our planet. It includes information about Earth Day, ways to take action, and a quiz to test environmental knowledge.
+This repository contains the source code for an Earth Day celebration web application. 
+
+![Earth Day Image](assets/pictures/1.jpg)
+![Earth Day Image](assets/pictures/2.jpg)
+
+The application aims to raise awareness about environmental issues and inspire action to protect our planet. 
+
+![Earth Day Image](assets/pictures/3.jpg)
+![Earth Day Image](assets/pictures/4.jpg)
+
+It includes information about Earth Day, ways to take action, and a quiz to test environmental knowledge.
 
 ## Features
 
