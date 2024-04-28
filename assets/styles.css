@@ -17,6 +17,29 @@ body {
     align-items: center;
     text-align: center;
   }
+
+  body {
+    background-color: black;
+  }
+  
+  #pacman {
+    height: 470px;
+    width: 382px;
+    border-radius: 5px;
+    margin: 20px auto;
+  }
+  
+  #shim {
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    visibility: hidden
+  }
+  
+p {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: yellow;
+  }
   
   /* Define the keyframes for the bounce animation */
   @keyframes bounce {
@@ -124,6 +147,7 @@ li:hover {
     animation: fadeIn 0.5s ease; /* Add fade in animation */
     transition: color 0.3s ease;
     content: "\279B"; /* Add this line to display the special character */
+    color: lightskyblue;
     }
     a {
         color: blue;
