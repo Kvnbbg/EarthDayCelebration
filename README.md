@@ -1,5 +1,3 @@
-![Earth Day Video](assets/video/5.mp4)
-
 # EarthDay
 
 Welcome to the EarthDay repository!
@@ -12,8 +10,6 @@ This repository contains the source code for an Earth Day celebration web applic
 
 The application aims to raise awareness about environmental issues and inspire action to protect our planet.
 
-![Earth Day Image](assets/pictures/3.jpg)
-
 It includes information about Earth Day, ways to take action, and a quiz to test environmental knowledge.
 
 ## Features
@@ -22,7 +18,7 @@ It includes information about Earth Day, ways to take action, and a quiz to test
 - 🌱 Discover actionable steps to help the environment.
 - 📝 Test your environmental knowledge with our Earth Day quiz.
 
-![Earth Day Image](assets/pictures/2.jpg)
+![Earth Day Image](assets/pictures/3.jpg)
 
 ## Getting Started
 
@@ -61,4 +57,4 @@ We extend our gratitude to everyone involved in making this challenge a success 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Mozilla License](LICENSE).
