@@ -1,6 +1,6 @@
 /* style.css */
 html {
-    font-size: 16px;
+    font-size: 25px;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -16,18 +16,8 @@ html {
   }
 
 body {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
+    font-family: 'Galada', cursive;
+    font-size: 1.5em;
     background-color: rgb(19, 19, 42);
     align-items: center;
     text-align: center;
@@ -70,12 +60,8 @@ aside img:hover {
     animation-play-state: paused; /* Pause animation on hover */
   }
   
-
 p {
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
-    font-size: large;
-    color: yellow;
+    color: whitesmoke;
   }
   
   /* Define the keyframes for the bounce animation */
@@ -207,10 +193,18 @@ li:hover {
     margin: 10px;
   }
   
+  .quote {
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+  }
   
   footer {
+    font-family:
+    'Permanent Marker';
     background-color: #333;
-    color: #fff;
+    color: #d2c918;
     padding: 10px;
     text-align: center;
     padding-top: 20px;
