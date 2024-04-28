@@ -2,6 +2,9 @@
 
 Welcome to the EarthDay repository!
 
+⬇️ Preview is below ⬇️ 
+- **Click**: [Earth Day Preview](https://kvnbbg.github.io/EarthDayCelebration/)
+
 ## Description
 
 This repository contains the source code for an Earth Day celebration web application.
