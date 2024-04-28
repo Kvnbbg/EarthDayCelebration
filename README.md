@@ -1,3 +1,7 @@
+Pacman Game with EarthDayCelebration theme included !
+
+[Pacman Game](/EarthDayCelebration/assets/pictures/pacman.gif)
+
 # EarthDay
 
 Welcome to the EarthDay repository!

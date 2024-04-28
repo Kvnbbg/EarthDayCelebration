@@ -31,6 +31,8 @@ body {
     background-color: rgb(19, 19, 42);
     align-items: center;
     text-align: center;
+    margin: auto;
+    padding: 0;
   }
   
   #pacman {
@@ -38,17 +40,41 @@ body {
     width: 382px;
     border-radius: 5px;
     margin: 20px auto;
+    position: relative;
+    color: yellow;
   }
   
   #shim {
     font-family: 'Permanent Marker', cursive;
     position: absolute;
-    visibility: hidden;
+    color: yellow;
   }
   
+aside {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+aside img {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; /* Optional: Adjust timing function */
+    animation-iteration-count: infinite; /* Infinite loop */
+  }
+  
+aside img:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+  
+
 p {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
+    font-size: large;
     color: yellow;
   }
   
@@ -69,30 +95,22 @@ p {
     }
   }
   
-  /* Apply the animation to an element */
-  .my-element {
-    animation-name: bounce;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out; /* Optional: Adjust timing function */
-    animation-iteration-count: infinite; /* Infinite loop */
-  }
-  
 h2 {
-    color: #333;
+    color: #637f87;
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
 }
 
 h3 {
-    color: #333;
+    color: #b4e7a9;
     font-size: 1em;
     font-weight: 500;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #838282;
     font-size: 2em;
     font-weight: 700;
     text-align: center;
@@ -152,16 +170,17 @@ h1 {
   
   li {
     margin-bottom: 5px;
+    color: rgb(113, 113, 113);
   }
 li:hover {
     cursor: pointer; /* Change cursor to pointer on hover */
     animation: fadeIn 0.5s ease; /* Add fade in animation */
     transition: color 0.3s ease;
     content: "\279B"; /* Add this line to display the special character */
-    color: lightskyblue;
+    color: rgb(140, 205, 207);
     }
     a {
-        color: blue;
+        color: rgb(15, 255, 247);
         text-decoration: none;
         transition: color 0.3s ease; /* Add smooth transition for link color */
     }
@@ -257,4 +276,4 @@ li:hover {
     nav ul li {
       margin-right: 10px;
     }
-  
+  }
