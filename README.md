@@ -6,13 +6,13 @@ Welcome to the EarthDay repository!
 
 This repository contains the source code for an Earth Day celebration web application.
 
-![Earth Day Image](/EarthDayCelebration/assets/pictures/1.jpg)
+![Earth Day Image](/assets/pictures/1.jpg)
 
 The application aims to raise awareness about environmental issues and inspire action to protect our planet.
 
 It includes information about Earth Day, ways to take action, games and a quiz to test environmental knowledge.
 
-[Pacman Game with EarthDayCelebration theme included !](/EarthDayCelebration/assets/pictures/pacman.gif)
+[Pacman Game with EarthDayCelebration theme included !](/assets/pictures/pacman.gif)
 
 ## Features
 
@@ -20,7 +20,7 @@ It includes information about Earth Day, ways to take action, games and a quiz t
 - 🌱 Discover actionable steps to help the environment.
 - 📝 Test your environmental knowledge with our Earth Day quiz.
 
-![Earth Day Image](/EarthDayCelebration/assets/pictures/3.jpg)
+![Earth Day Image](/assets/pictures/3.jpg)
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 This front-end challenge was hosted on dev.to on April 29, 2024. Special thanks to the organizers for creating this opportunity for developers to showcase their skills and learn from each other.
 
-![Earth Day Image](/EarthDayCelebration/assets/pictures/4.jpg)
+![Earth Day Image](/assets/pictures/4.jpg)
 
 - **Organizers**: [dev.to](https://dev.to)
 - **Challenge Creator**: [dev.to](https://dev.to)
