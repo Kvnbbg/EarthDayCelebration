@@ -1,4 +1,19 @@
 /* style.css */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
 
 body {
     font-family:
@@ -13,13 +28,9 @@ body {
       "Open Sans",
       "Helvetica Neue",
       sans-serif;
-    background-color: #f9f9f9;
+    background-color: rgb(19, 19, 42);
     align-items: center;
     text-align: center;
-  }
-
-  body {
-    background-color: black;
   }
   
   #pacman {
@@ -32,7 +43,7 @@ body {
   #shim {
     font-family: 'Permanent Marker', cursive;
     position: absolute;
-    visibility: hidden
+    visibility: hidden;
   }
   
 p {
@@ -186,16 +197,7 @@ li:hover {
     padding-top: 20px;
     margin-top: 20px;
   }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex: 2;
-    padding: 10px;
-    margin: 10px;
-  }
+
   
   #myButton:hover {
     opacity: 0.8; /* Reduce opacity on hover */

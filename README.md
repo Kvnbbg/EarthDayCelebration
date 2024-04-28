@@ -6,7 +6,7 @@ Welcome to the EarthDay repository!
 
 This repository contains the source code for an Earth Day celebration web application.
 
-![Earth Day Image](assets/pictures/1.jpg)
+![Earth Day Image](/EarthDayCelebration/assets/pictures/1.jpg)
 
 The application aims to raise awareness about environmental issues and inspire action to protect our planet.
 
@@ -18,14 +18,14 @@ It includes information about Earth Day, ways to take action, and a quiz to test
 - 🌱 Discover actionable steps to help the environment.
 - 📝 Test your environmental knowledge with our Earth Day quiz.
 
-![Earth Day Image](assets/pictures/3.jpg)
+![Earth Day Image](/EarthDayCelebration/assets/pictures/3.jpg)
 
 ## Getting Started
 
 To get started, simply clone this repository to your local machine and open the `index.html` file in your web browser.
 
 ```bash
-git clone https://github.com/kvnbbg/EarthDay.git
+git clone https://github.com/kvnbbg/EarthDayCelebration.git
 ```
 
 ## Usage
@@ -42,8 +42,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 This front-end challenge was hosted on dev.to on April 29, 2024. Special thanks to the organizers for creating this opportunity for developers to showcase their skills and learn from each other.
 
-![Earth Day Image](assets/pictures/4.jpg)
-
+![Earth Day Image](/EarthDayCelebration/assets/pictures/4.jpg)
 - **Organizers**: [dev.to](https://dev.to)
 - **Challenge Creator**: [dev.to](https://dev.to)
 - **Participants**: [@Kvnbbg](https://kvnbbg.fr)
