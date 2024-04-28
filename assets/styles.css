@@ -1,12 +1,7 @@
 /* style.css */
 html {
-    font-size: 25px;
+    font-size: 16px;
     box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
   }
   
   *,
@@ -16,30 +11,42 @@ html {
   }
 
 body {
-    font-family: 'Galada', cursive;
     font-size: 1.5em;
     background-color: rgb(19, 19, 42);
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding: 0;
   }
-  
-  #pacman {
-    height: 470px;
-    width: 382px;
-    border-radius: 5px;
-    margin: 20px auto;
-    position: relative;
-    color: yellow;
-  }
-  
-  #shim {
-    font-family: 'Permanent Marker', cursive;
-    position: absolute;
-    color: yellow;
-  }
-  
+ 
+
+
+#pacman {
+  height: 470px;
+  width: 382px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+#shim {
+  font-family: 'Permanent Marker', cursive;
+  position: absolute;
+  visibility: hidden
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  color: yellow;
+}
+
+body {
+  width: 100%;
+  margin: 0px auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #0000FF;
+}
+
 aside {
     color: #fff;
     padding: 10px;
@@ -62,6 +69,7 @@ aside img:hover {
   
 p {
     color: whitesmoke;
+    font-family: 'Galada', cursive;
   }
   
   /* Define the keyframes for the bounce animation */
@@ -92,13 +100,6 @@ h3 {
     color: #b4e7a9;
     font-size: 1em;
     font-weight: 500;
-    text-align: center;
-}
-
-h1 {
-    color: #838282;
-    font-size: 2em;
-    font-weight: 700;
     text-align: center;
 }
   
@@ -165,11 +166,6 @@ li:hover {
     content: "\279B"; /* Add this line to display the special character */
     color: rgb(140, 205, 207);
     }
-    a {
-        color: rgb(15, 255, 247);
-        text-decoration: none;
-        transition: color 0.3s ease; /* Add smooth transition for link color */
-    }
   
   a:hover {
     color: red; /* Change link color on hover */
@@ -201,8 +197,6 @@ li:hover {
   }
   
   footer {
-    font-family:
-    'Permanent Marker';
     background-color: #333;
     color: #d2c918;
     padding: 10px;
