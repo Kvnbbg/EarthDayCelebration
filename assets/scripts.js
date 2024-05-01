@@ -26,3 +26,13 @@ function toggleDropdown() {
     );
   }
 }
+window.onload = function() {
+  const headers = document.querySelectorAll('h3');
+  headers.forEach(header => {
+    header.innerHTML = header.textContent.split('').map(letter => `<span>${letter}</span>`).join('');
+  });
+};
+
+document.querySelector('.like-button').addEventListener('click', function() {
+  this.textContent = this.textContent.includes('Liked') ? '❤️ Like' : '💔 Liked';
+});
