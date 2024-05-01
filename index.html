@@ -18,37 +18,22 @@
   <body>
     <!-- Header -->
     <header>
-      <div>
-        <img
-          src="/EarthDayCelebration/assets/pictures/earth-day.jpg"
-          alt="Earth Day Celebration"
-        />
-      </div>
+        <h1>Earth Day</h1>
+        <p>April 22, 2024</p>
     </header>
     <!-- Navigation -->
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#mission">Pacman</a></li>
+        <li><a href="#pacman">Pacman</a></li>
         <li><a href="#quizz">Quizz</a></li>
         <li><a href="#vision">Vision</a></li>
         <li><a href="#activities">Activities</a></li>
-        <li><a href="#quotes">Quotes</a></li>
         <li><a href="#events">Events</a></li>
       </ul>
     </nav>
     <!-- Main Content -->
     <main>
-      <section id="about">
-        <h2>About Earth Day</h2>
-        <p>
-          Earth Day is an annual event celebrated around the world on April 22
-          to demonstrate support for environmental protection. First celebrated
-          in 1970, it now includes events coordinated globally by EARTHDAY.ORG
-          in more than 193 countries.
-        </p>
         <section id="quotes">
-          <h3 class="section-title">Earth Day Quotes</h3>
           <article class="quote">
             <blockquote>
               <p>"The Earth is what we all have in common." - Wendell Berry</p>
@@ -72,10 +57,9 @@
             </blockquote>
           </article>
         </section>
-      </section>
       <br />
       <section id="events">
-        <h2>Join us playing App Store</h2>
+        <h2>Play With Us</h2>
         <p>
           Participate in local and global Earth Day events to take action
           towards a sustainable apps & games. Check out
@@ -83,24 +67,34 @@
         </p>
       </section>
       <br />
+      <br />
       <section id="vision">
-        <h2>Our Vision</h2>
         <p>
           Our vision is to create a sustainable future for our planet by
           promoting environmental conservation and encouraging people to live a
           more eco-friendly lifestyle. Together, we can make a difference!
         </p>
+        <ul class="vision-goals">
+          <li>Reduce carbon emissions and combat climate change.</li>
+          <li>Protect endangered species and preserve biodiversity.</li>
+          <li>Conserve natural resources and promote sustainable practices.</li>
+        </ul>
         <a href="https://kvnbbg.github.io/500Discount/index.html"
           >Start the Electric Car App!</a
         >
       </section>
       <br />
+      <br />
       <section id="quizz">
-        <h2>Earth Day Quiz</h2>
         <p>
           Test your knowledge about Earth Day and learn more about how you can
           help protect our planet by taking our quiz!
         </p>
+        <ul class="quiz-rules">
+          <li>Answer all the questions to the best of your ability.</li>
+          <li>Click the "Submit" button to see your score.</li>
+          <li>Share your results with your friends and family!</li>
+        </ul>
         <a href="https://shiny-dollop-quizz-da86060a8495.herokuapp.com/"
           >Start the Quiz!</a
         >
@@ -144,21 +138,18 @@
           </p>
         </div>
       </aside>
-      <section id="mission">
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is to raise awareness about environmental issues and
-          inspire people to take action to protect our planet. We believe that
-          everyone can make a difference, no matter how small the action.
-        </p>
-      </section>
+      <br />
       <br />
       <section id="pacman" class="relative mb-2">
+
         <button
           class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600"
           onclick="toggleDropdown()"
-        >
-          Start the Pacman Earth Day Theme!
+        >        <img
+        src="/assets/pictures/earth-day.jpg" style="width: 100%; height: auto;"
+        alt="Earth Day Celebration"
+      />
+          Start the Rain !
         </button>
 
         <!-- Dropdown -->
@@ -169,7 +160,7 @@
           <!-- Your Pacman game content goes here -->
           <!-- For example, you can embed an HTML5 canvas for the game  <p><a href="https://github.com/daleharvey/pacman" target="_blank">Credits: https://github.com/daleharvey/pacman</a></p>-->
           <img
-            src="/EarthDayCelebration/assets/pictures/pacman.gif"
+            src="/assets/pictures/pacman.gif"
             alt="Pacman"
             class="w-full h-full"
           />
@@ -183,7 +174,8 @@
     </main>
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Earth Day Celebration. All rights reserved.</p>
+        
+      <p>&copy; 2024 Earth Day Celebration <a href="https://github.com/Kvnbbg"></a>by Kvnbbg</a>. All rights reserved.</p>
     </footer>
     <script src="/assets/scripts.js"></script>
   </body>

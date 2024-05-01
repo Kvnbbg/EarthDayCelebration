@@ -40,6 +40,8 @@ body {
   width: 100%;
   margin: 0px auto;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -114,6 +116,7 @@ h3 {
   nav {
     background-color: #444;
     padding: 10px;
+    position: sticky;
   }
   
   nav ul {
@@ -137,6 +140,14 @@ h3 {
   nav ul li a:hover {
     color: lightgreen; /* Change link color on hover */
   }
+
+  nav:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    animation: alternate 0.5s ease; /* Add bounce animation */
+    color: #333;
+    transition: color 0.3s ease;
+    content: "\1D57\300\31B"; /* Add this line to display the special character */
+  }
   
   main {
     padding: 20px;
@@ -145,14 +156,6 @@ h3 {
   ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  nav:hover {
-    cursor: pointer; /* Change cursor to pointer on hover */
-    animation: alternate 0.5s ease; /* Add bounce animation */
-    color: #333;
-    transition: color 0.3s ease;
-    content: "\1D57\300\31B"; /* Add this line to display the special character */
   }
   
   li {
