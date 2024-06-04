@@ -1,330 +1,484 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Earth Day Celebration</title>
-    <link rel="icon" href="/assets/pictures/icon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="/assets/pictures/icon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <style>
-        .fade-in {
-            animation: fadeIn 1s ease-out;
-        }
+      .fade-in {
+        animation: fadeIn 1s ease-out;
+      }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
+        to {
+          opacity: 1;
+        }
+      }
 
-        @keyframes explode {
-            0% { transform: scale(1); opacity: 1; }
-            100% { transform: scale(3); opacity: 0; }
+      @keyframes explode {
+        0% {
+          transform: scale(1);
+          opacity: 1;
         }
+        100% {
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
 
-        .fireworks-animation {
-            position: fixed;
-            border-radius: 50%;
-            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
-            animation: explode 1s ease-out;
-        }
+      .fireworks-animation {
+        position: fixed;
+        border-radius: 50%;
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.7);
+        animation: explode 1s ease-out;
+      }
 
-        .chat-notification {
-            display: flex;
-            align-items: center;
-            max-width: 24rem;
-            margin: 0 auto;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            background-color: #fff;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .chat-notification-logo-wrapper {
-            flex-shrink: 0;
-        }
-        .chat-notification-logo {
-            height: 3rem;
-            width: 3rem;
-        }
-        .chat-notification-content {
-            margin-left: 1.5rem;
-        }
-        .chat-notification-title {
-            color: #1a202c;
-            font-size: 1.25rem;
-            line-height: 1.25;
-        }
-        .chat-notification-message {
-            color: #718096;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
+      .chat-notification {
+        display: flex;
+        align-items: center;
+        max-width: 24rem;
+        margin: 0 auto;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .chat-notification-logo-wrapper {
+        flex-shrink: 0;
+      }
+      .chat-notification-logo {
+        height: 3rem;
+        width: 3rem;
+      }
+      .chat-notification-content {
+        margin-left: 1.5rem;
+      }
+      .chat-notification-title {
+        color: #1a202c;
+        font-size: 1.25rem;
+        line-height: 1.25;
+      }
+      .chat-notification-message {
+        color: #718096;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
     </style>
-</head>
-<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
+  </head>
+  <body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
     <!-- Header -->
     <header class="bg-green-600 text-white p-6 text-center">
-        <h1 class="text-4xl font-bold">Earth Day Celebration</h1>
-        <p class="text-lg">April 22, 2024</p>
+      <h1 class="text-4xl font-bold">Earth Day Celebration</h1>
+      <p class="text-lg">April 22, 2024</p>
     </header>
 
     <!-- Navigation -->
     <nav class="bg-gray-800 text-white py-4 sticky top-0 z-50">
-        <ul class="flex justify-center space-x-4">
-            <li><a class="hover:text-green-400" href="#activities">Activities</a></li>
-            <li><a class="hover:text-green-400" href="#quiz">Quiz</a></li>
-            <li><a class="hover:text-green-400" href="#vision">Vision</a></li>
-            <li><a class="hover:text-green-400" href="#events">Events</a></li>
-            <li><a class="hover:text-green-400" href="#community">Community</a></li>
-        </ul>
+      <ul class="flex justify-center space-x-4">
+        <li>
+          <a class="hover:text-green-400" href="#activities">Activities</a>
+        </li>
+        <li><a class="hover:text-green-400" href="#quiz">Quiz</a></li>
+        <li><a class="hover:text-green-400" href="#vision">Vision</a></li>
+        <li><a class="hover:text-green-400" href="#events">Events</a></li>
+        <li><a class="hover:text-green-400" href="#community">Community</a></li>
+      </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-cover bg-center h-screen text-white flex flex-col justify-center items-center" style="background-image: url('/EarthDayCelebration/assets/pictures/hero-bg.jpg');">
-        <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center fade-in">
-            <h2 class="text-5xl font-bold mb-4">Celebrate Earth Day</h2>
-            <p class="text-xl mb-6">Join us in making a difference for our planet on April 22, 2024.</p>
-            <a href="#vision" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition">Learn More</a>
-        </div>
+    <section
+      id="hero"
+      class="bg-cover bg-center h-screen text-white flex flex-col justify-center items-center"
+      style="
+        background-image: url(&quot;/EarthDayCelebration/assets/pictures/hero-bg.jpg&quot;);
+      "
+    >
+      <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center fade-in">
+        <h2 class="text-5xl font-bold mb-4">Celebrate Earth Day</h2>
+        <p class="text-xl mb-6">
+          Join us in making a difference for our planet on April 22, 2024.
+        </p>
+        <a
+          href="#vision"
+          class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition"
+          >Learn More</a
+        >
+      </div>
     </section>
 
     <!-- Main Content -->
     <main class="p-6">
-        <!-- Activities Section -->
-        <section id="activities" class="my-8">
-            <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Activities</h2>
-            <div class="flex flex-wrap justify-center gap-8">
-                <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Planting Trees 🌳</h3>
-                    <p class="text-gray-600">Get involved in tree planting activities in your area to help restore ecosystems and combat climate change.</p>
-                </div>
-                <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Cleanups 🧹</h3>
-                    <p class="text-gray-600">Join local cleanups to help remove trash and debris from parks, beaches, and other natural areas. Every little bit helps!</p>
-                </div>
-                <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-2">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Recycling ♻️</h3>
-                    <p class="text-gray-600">Reduce waste by recycling materials like paper, plastic, and glass. You can also reuse items to give them a second life!</p>
-                </div>
-            </div>
-        </section>
+      <!-- Activities Section -->
+      <section id="activities" class="my-8">
+        <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">
+          Activities
+        </h2>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div
+            class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-2"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-2">
+              Planting Trees 🌳
+            </h3>
+            <p class="text-gray-600">
+              Get involved in tree planting activities in your area to help
+              restore ecosystems and combat climate change.
+            </p>
+          </div>
+          <div
+            class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-2"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-2">
+              Cleanups 🧹
+            </h3>
+            <p class="text-gray-600">
+              Join local cleanups to help remove trash and debris from parks,
+              beaches, and other natural areas. Every little bit helps!
+            </p>
+          </div>
+          <div
+            class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-2"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-2">
+              Recycling ♻️
+            </h3>
+            <p class="text-gray-600">
+              Reduce waste by recycling materials like paper, plastic, and
+              glass. You can also reuse items to give them a second life!
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Instagram Highlights Section -->
-        <section id="instagram" class="my-8">
-            <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Instagram Highlights</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="relative">
-                    <img src="/EarthDayCelebration/assets/pictures/nature/nature1.jpg" alt="Nature Image 1" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition">
-                    <button class="absolute bottom-4 right-4 bg-white p-2 rounded-full text-green-600 hover:bg-green-600 hover:text-white transition">💚</button>
-                </div>
-                <div class="relative">
-                    <img src="/EarthDayCelebration/assets/pictures/nature/nature2.jpg" alt="Recycling" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition">
-                    <button class="absolute bottom-4 right-4 bg-white p-2 rounded-full text-green-600 hover:bg-green-600 hover:text-white transition">💚</button>
-                </div>
-                <div class="relative">
-                    <img src="/EarthDayCelebration/assets/pictures/nature/nature3.jpg" alt="Clean Up" class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition">
-                    <button class="absolute bottom-4 right-4 bg-white p-2 rounded-full text-green-600 hover:bg-green-600 hover:text-white transition">💚</button>
-                </div>
-            </div>
-        </section>
+      <!-- Instagram Highlights Section -->
+      <section id="instagram" class="my-8">
+        <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">
+          Instagram Highlights
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="relative">
+            <img
+              src="/EarthDayCelebration/assets/pictures/nature/nature1.jpg"
+              alt="Nature Image 1"
+              class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition"
+            />
+            <button
+              class="absolute bottom-4 right-4 bg-white p-2 rounded-full text-green-600 hover:bg-green-600 hover:text-white transition"
+            >
+              💚
+            </button>
+          </div>
+          <div class="relative">
+            <img
+              src="/EarthDayCelebration/assets/pictures/nature/nature2.jpg"
+              alt="Recycling"
+              class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition"
+            />
+            <button
+              class="absolute bottom-4 right-4 bg-white p-2 rounded-full text-green-600 hover:bg-green-600 hover:text-white transition"
+            >
+              💚
+            </button>
+          </div>
+          <div class="relative">
+            <img
+              src="/EarthDayCelebration/assets/pictures/nature/nature3.jpg"
+              alt="Clean Up"
+              class="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition"
+            />
+            <button
+              class="absolute bottom-4 right-4 bg-white p-2 rounded-full text-green-600 hover:bg-green-600 hover:text-white transition"
+            >
+              💚
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <!-- Community Section -->
-        <section id="community" class="my-8">
-            <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Community</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Join the Earth Day Movement</h3>
-                    <p class="text-gray-600 mb-4">Become a part of the global Earth Day movement by participating in local events, volunteering, and spreading awareness about environmental issues.</p>
-                    <a href="https://www.earthday.org/" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition">Learn More</a>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                    <h3 class="text-2xl font-semibold text-green-700 mb-2">Share Your Story</h3>
-                    <p class="text-gray-600 mb-4">Share your Earth Day experiences and inspire others to take action by posting on social media with the hashtag #EarthDay2024.</p>
-                    <a href="https://www.instagram.com/earthdaynetwork/" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition">Instagram</a>
-                </div>
-            </div>
-          </section>
-        <!-- Vision Section -->
-        <section id="vision" class="my-8">
-            <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Our Vision</h2>
-            <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <p class="text-gray-600 mb-4">Our vision is to create a sustainable future for our planet by promoting environmental conservation and encouraging people to live a more eco-friendly lifestyle. Together, we can make a difference!</p>
-                <ul class="list-disc list-inside text-gray-600 mb-4">
-                    <li>Reduce carbon emissions and combat climate change.</li>
-                    <li>Protect endangered species and preserve biodiversity.</li>
-                    <li>Conserve natural resources and promote sustainable practices.</li>
-                </ul>
-                <a href="https://kvnbbg.github.io/500Discount/index.html" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition">Start the Electric Car App!</a>
-            </div>
-        </section>
+      <!-- Community Section -->
+      <section id="community" class="my-8">
+        <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">
+          Community
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-2">
+              Join the Earth Day Movement
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Become a part of the global Earth Day movement by participating in
+              local events, volunteering, and spreading awareness about
+              environmental issues.
+            </p>
+            <a
+              href="https://www.earthday.org/"
+              class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition"
+              >Learn More</a
+            >
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <h3 class="text-2xl font-semibold text-green-700 mb-2">
+              Share Your Story
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Share your Earth Day experiences and inspire others to take action
+              by posting on social media with the hashtag #EarthDay2024.
+            </p>
+            <a
+              href="https://www.instagram.com/earthdaynetwork/"
+              class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Vision Section -->
+      <section id="vision" class="my-8">
+        <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">
+          Our Vision
+        </h2>
+        <div
+          class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
+          <p class="text-gray-600 mb-4">
+            Our vision is to create a sustainable future for our planet by
+            promoting environmental conservation and encouraging people to live
+            a more eco-friendly lifestyle. Together, we can make a difference!
+          </p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Reduce carbon emissions and combat climate change.</li>
+            <li>Protect endangered species and preserve biodiversity.</li>
+            <li>
+              Conserve natural resources and promote sustainable practices.
+            </li>
+          </ul>
+          <a
+            href="https://kvnbbg.github.io/500Discount/index.html"
+            class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition"
+            >Start the Electric Car App!</a
+          >
+        </div>
+      </section>
 
-        <!-- Events Section -->
-        <section id="events" class="my-8">
-            <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Events</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8DQeFmWUyd8?si=xR40K5vJaVRN-KQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p class="text-center text-gray-600 mb-8">Participate in local and global Earth Day events to take action towards a sustainable future. Check out the <a href="https://allmylinks.com/kevin-marville" class="text-green-600 hover:underline">app store</a> for more details.</p>
-        </section>
+      <!-- Events Section -->
+<section id="events" class="my-8">
+    <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Events 🌍</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8DQeFmWUyd8?si=xR40K5vJaVRN-KQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="text-center text-gray-600 mb-8">
+        🌱 Join us in celebrating Earth Day by participating in local and global events! From tree planting 🌳 to beach cleanups 🧹, there's something for everyone. Don't miss out on the chance to make a positive impact on our planet. 🌎
+        <br>
+        📲 Check out our <a href="https://allmylinks.com/kevin-marville" class="text-green-600 hover:underline">app store</a> for more details on events and how you can get involved. Together, we can make a difference! 💪
+    </p>
+</section>
 
-        <!-- Quiz Section -->
-        <section id="quiz" class="my-8">
-            <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Earth Day Quiz</h2>
-            <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <p class="text-gray-600 mb-4">Test your knowledge about Earth Day and learn more about how you can help protect our planet by taking our quiz!</p>
-                <ul class="list-disc list-inside text-gray-600 mb-4">
-                    <li>Answer all the questions to the best of your ability.</li>
-                    <li>Click the "Submit" button to see your score.</li>
-                    <li>Share your results with your friends and family!</li>
-                </ul>
-                <a href="https://shiny-dollop-quizz-da86060a8495.herokuapp.com/" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition">Start the Quiz!</a>
-            </div>
-        </section>
 
-        <!-- Chatbot Section -->
-        <section class="bubble-container bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <div class="bubble received">
-                <p id="chatbotAnswer">What do you think?</p>
-            </div>
-            <div class="input-container mt-4">
-                <input type="text" id="userInput" placeholder="Ask me something..." class="w-full p-3 border rounded-lg focus:outline-none focus:border-green-600 transition">
-                <button onclick="getChatbotResponse()" class="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-500 transition mt-4 w-full md:w-auto">Send</button>
-            </div>
-        </section>
+      <!-- Quiz Section -->
+      <section id="quiz" class="my-8">
+        <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">
+          Earth Day Quiz
+        </h2>
+        <div
+          class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+        >
+          <p class="text-gray-600 mb-4">
+            Test your knowledge about Earth Day and learn more about how you can
+            help protect our planet by taking our quiz!
+          </p>
+          <ul class="list-disc list-inside text-gray-600 mb-4">
+            <li>Answer all the questions to the best of your ability.</li>
+            <li>Click the "Submit" button to see your score.</li>
+            <li>Share your results with your friends and family!</li>
+          </ul>
+          <a
+            href="https://shiny-dollop-quizz-da86060a8495.herokuapp.com/"
+            class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition"
+            >Start the Quiz!</a
+          >
+        </div>
+      </section>
+
+      <!-- Chatbot Section -->
+      <section
+        class="bubble-container bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition"
+      >
+        <div class="bubble received">
+          <p id="chatbotAnswer">What do you think?</p>
+        </div>
+        <div class="input-container mt-4">
+          <input
+            type="text"
+            id="userInput"
+            placeholder="Ask me something..."
+            class="w-full p-3 border rounded-lg focus:outline-none focus:border-green-600 transition"
+          />
+          <button
+            onclick="getChatbotResponse()"
+            class="bg-green-600 text-white py-3 px-6 rounded-lg hover:bg-green-500 transition mt-4 w-full md:w-auto"
+          >
+            Send
+          </button>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-4 text-center">
-        <p>&copy; 2024 Earth Day Celebration <a href="https://github.com/Kvnbbg" class="text-green-400 hover:underline">by Kevin Marville</a>. All rights reserved.</p>
+      <p>
+        &copy; 2024 Earth Day Celebration
+        <a
+          href="https://github.com/Kvnbbg"
+          class="text-green-400 hover:underline"
+          >by Kevin Marville</a
+        >. All rights reserved.
+      </p>
     </footer>
 
     <script>
-        function toggleDropdown() {
-            const dropdown = document.getElementById('pacman-dropdown');
-            dropdown.classList.toggle('hidden');
-        }
+      function toggleDropdown() {
+          const dropdown = document.getElementById('pacman-dropdown');
+          dropdown.classList.toggle('hidden');
+      }
 
-        function triggerFireworks() {
-            const fireworksDiv = document.createElement("div");
-            fireworksDiv.classList.add("fireworks-animation");
+      function triggerFireworks() {
+          const fireworksDiv = document.createElement("div");
+          fireworksDiv.classList.add("fireworks-animation");
 
-            const styles = ["red", "green", "blue", "yellow", "purple"];
-            const randomStyle = styles[Math.floor(Math.random() * styles.length)];
-            fireworksDiv.style.backgroundColor = randomStyle;
+          const styles = ["red", "green", "blue", "yellow", "purple"];
+          const randomStyle = styles[Math.floor(Math.random() * styles.length)];
+          fireworksDiv.style.backgroundColor = randomStyle;
 
-            fireworksDiv.style.top = `${Math.floor(Math.random() * 80) + 10}%`;
-            fireworksDiv.style.left = `${Math.floor(Math.random() * 80) + 10}%`;
-            fireworksDiv.style.width = "50px";
-            fireworksDiv.style.height = "50px";
+          fireworksDiv.style.top = `${Math.floor(Math.random() * 80) + 10}%`;
+          fireworksDiv.style.left = `${Math.floor(Math.random() * 80) + 10}%`;
+          fireworksDiv.style.width = "50px";
+          fireworksDiv.style.height = "50px";
 
-            document.body.appendChild(fireworksDiv);
+          document.body.appendChild(fireworksDiv);
 
-            setTimeout(() => {
-                document.body.removeChild(fireworksDiv);
-            }, 2000);
-        }
+          setTimeout(() => {
+              document.body.removeChild(fireworksDiv);
+          }, 2000);
+      }
 
-        function getChatbotResponse() {
-            const userInput = document.getElementById('userInput').value;
-            if (userInput.trim() === '') return;
-        
-            const bubbleContainer = document.querySelector('.bubble-container');
-        
-            const userBubble = document.createElement('div');
-            userBubble.classList.add('bubble', 'sent');
-            userBubble.innerHTML = `<p>${userInput}</p>`;
-            bubbleContainer.insertBefore(userBubble, bubbleContainer.querySelector('.input-container'));
-        
-            document.getElementById('userInput').value = '';
-        
-            const typingIndicator = document.createElement('div');
-            typingIndicator.classList.add('typing');
-            typingIndicator.innerHTML = '<div class="dot"></div><div class="dot"></div><div class="dot"></div>';
-            bubbleContainer.insertBefore(typingIndicator, bubbleContainer.querySelector('.input-container'));
-        
-            setTimeout(() => {
-                bubbleContainer.removeChild(typingIndicator);
-        
-                const botBubble1 = document.createElement('div');
-                botBubble1.classList.add('bubble', 'received');
-                botBubble1.innerHTML = '<p>This is a response from the Earth 🌍.</p>';
-                bubbleContainer.insertBefore(botBubble1, bubbleContainer.querySelector('.input-container'));
-        
-                const botBubble2 = document.createElement('div');
-                botBubble2.classList.add('bubble', 'received');
-                botBubble2.innerHTML = '<p>This is love from 🌎.</p>';
-                bubbleContainer.insertBefore(botBubble2, bubbleContainer.querySelector('.input-container'));
-        
-                const botBubble3 = document.createElement('div');
-                botBubble3.classList.add('bubble', 'received');
-                botBubble3.innerHTML = '<p>This day we celebrate from 🌏.</p>';
-                bubbleContainer.insertBefore(botBubble3, bubbleContainer.querySelector('.input-container'));
-        
-                animateGlobe();
-            }, 2000);
-        }
-        
-        function animateGlobe() {
-            const globeDiv = document.createElement('div');
-            globeDiv.classList.add('globe-animation');
-            globeDiv.style.width = '100px';
-            globeDiv.style.height = '100px';
-            globeDiv.style.backgroundImage = "url('assets/pictures/globe.png')";
-            globeDiv.style.backgroundSize = 'cover';
-            globeDiv.style.borderRadius = '50%';
-            globeDiv.style.animation = 'spin 4s linear infinite';
-        
-            document.body.appendChild(globeDiv);
-        
-            setTimeout(() => {
-                document.body.removeChild(globeDiv);
-            }, 8000);
-        }
-        
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
+      function getChatbotResponse() {
+          const userInput = document.getElementById('userInput').value;
+          if (userInput.trim() === '') return;
 
-        document.addEventListener("DOMContentLoaded", () => {
-            if (!document.querySelector(".warning-div")) {
-                createWarningDiv();
-            }
-            document.getElementById("userInput").addEventListener("keydown", (event) => {
-                if (event.key === "Enter") {
-                    getChatbotResponse();
-                }
-            });
-        });
+          const bubbleContainer = document.querySelector('.bubble-container');
 
-        const createWarningDiv = () => {
-            const userLang = navigator.language || navigator.userLanguage;
-            const messages = {
-                en: "JavaScript is required to fully enjoy our content. Please enable it in your browser settings.",
-                fr: "JavaScript est nécessaire pour profiter pleinement de notre contenu. Veuillez l'activer dans les paramètres de votre navigateur.",
-            };
+          const userBubble = document.createElement('div');
+          userBubble.classList.add('bubble', 'sent');
+          userBubble.innerHTML = `<p>${userInput}</p>`;
+          bubbleContainer.insertBefore(userBubble, bubbleContainer.querySelector('.input-container'));
 
-            const message = messages[userLang.startsWith("fr") ? "fr" : "en"];
-            const warningDiv = document.createElement("div");
-            warningDiv.setAttribute("role", "alert");
-            warningDiv.classList.add("warning-div");
-            warningDiv.textContent = message;
-            document.body.appendChild(warningDiv);
+          document.getElementById('userInput').value = '';
 
-            const yesButton = document.createElement("button");
-            yesButton.textContent = userLang.startsWith("fr") ? "Oui, j'ai JavaScript" : "Yes, I have JavaScript";
-            yesButton.onclick = () => {
-                warningDiv.style.display = "none";
-                triggerFireworks();
-            };
+          const typingIndicator = document.createElement('div');
+          typingIndicator.classList.add('typing');
+          typingIndicator.innerHTML = '<div class="dot"></div><div class="dot"></div><div class="dot"></div>';
+          bubbleContainer.insertBefore(typingIndicator, bubbleContainer.querySelector('.input-container'));
 
-            const noButton = document.createElement("button");
-            noButton.textContent = userLang.startsWith("fr") ? "Non, je n'ai pas JavaScript" : "No, I don't have JavaScript";
-            noButton.onclick = () => window.open("https://www.wikihow.com/Enable-Javascript", "_blank");
+          setTimeout(() => {
+              bubbleContainer.removeChild(typingIndicator);
 
-            warningDiv.appendChild(yesButton);
-            warningDiv.appendChild(noButton);
+              const botBubble1 = document.createElement('div');
+              botBubble1.classList.add('bubble', 'received');
+              botBubble1.innerHTML = '<p>This is a response from the Earth 🌍.</p>';
+              bubbleContainer.insertBefore(botBubble1, bubbleContainer.querySelector('.input-container'));
 
-            return warningDiv;
-        };
+              const botBubble2 = document.createElement('div');
+              botBubble2.classList.add('bubble', 'received');
+              botBubble2.innerHTML = '<p>This is love from 🌎.</p>';
+              bubbleContainer.insertBefore(botBubble2, bubbleContainer.querySelector('.input-container'));
+
+              const botBubble3 = document.createElement('div');
+              botBubble3.classList.add('bubble', 'received');
+              botBubble3.innerHTML = '<p>This day we celebrate from 🌏.</p>';
+              bubbleContainer.insertBefore(botBubble3, bubbleContainer.querySelector('.input-container'));
+
+              animateGlobe();
+          }, 2000);
+      }
+
+      function animateGlobe() {
+          const globeDiv = document.createElement('div');
+          globeDiv.classList.add('globe-animation');
+          globeDiv.style.width = '100px';
+          globeDiv.style.height = '100px';
+          globeDiv.style.backgroundImage = "url('assets/pictures/globe.png')";
+          globeDiv.style.backgroundSize = 'cover';
+          globeDiv.style.borderRadius = '50%';
+          globeDiv.style.animation = 'spin 4s linear infinite';
+
+          document.body.appendChild(globeDiv);
+
+          setTimeout(() => {
+              document.body.removeChild(globeDiv);
+          }, 8000);
+      }
+
+      @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+      }
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+          if (!document.querySelector(".warning-div")) {
+              createWarningDiv();
+          }
+          document.getElementById("userInput").addEventListener("keydown", (event) => {
+              if (event.key === "Enter") {
+                  getChatbotResponse();
+              }
+          });
+      });
+
+      const createWarningDiv = () => {
+          const userLang = navigator.language || navigator.userLanguage;
+          const messages = {
+              en: "JavaScript is required to fully enjoy our content. Please enable it in your browser settings.",
+              fr: "JavaScript est nécessaire pour profiter pleinement de notre contenu. Veuillez l'activer dans les paramètres de votre navigateur.",
+          };
+
+          const message = messages[userLang.startsWith("fr") ? "fr" : "en"];
+          const warningDiv = document.createElement("div");
+          warningDiv.setAttribute("role", "alert");
+          warningDiv.classList.add("warning-div");
+          warningDiv.textContent = message;
+          document.body.appendChild(warningDiv);
+
+          const yesButton = document.createElement("button");
+          yesButton.textContent = userLang.startsWith("fr") ? "Oui, j'ai JavaScript" : "Yes, I have JavaScript";
+          yesButton.onclick = () => {
+              warningDiv.style.display = "none";
+              triggerFireworks();
+          };
+
+          const noButton = document.createElement("button");
+          noButton.textContent = userLang.startsWith("fr") ? "Non, je n'ai pas JavaScript" : "No, I don't have JavaScript";
+          noButton.onclick = () => window.open("https://www.wikihow.com/Enable-Javascript", "_blank");
+
+          warningDiv.appendChild(yesButton);
+          warningDiv.appendChild(noButton);
+
+          return warningDiv;
+      };
     </script>
-</body>
+  </body>
 </html>

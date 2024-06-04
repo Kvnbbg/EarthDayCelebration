@@ -8,3 +8,7 @@
     bottom: 10px;
     right: 10px;
 }
+.video-container {
+    display: flex;
+    justify-content: center;
+}
