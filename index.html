@@ -142,24 +142,6 @@
                     <a href="https://www.instagram.com/earthdaynetwork/" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-500 transition">Instagram</a>
                 </div>
             </div>
-            <button onclick="toggleDropdown()" class="bg-yellow-500 text-white py-3 px-6 rounded-md hover:bg-yellow-600 transition flex items-center justify-center w-full md:w-auto">
-              <img src="/EarthDayCelebration/assets/pictures/earth-day.jpg" class="w-8 h-8 mr-2" alt="Earth Day Celebration"> Start the Rain!
-
-          </button>
-            <div id="pacman-dropdown" class="hidden">
-                <div class="chat-notification">
-                    <div class="chat-notification-logo-wrapper">
-                        <img src="/EarthDayCelebration/assets/pictures/pacman.png" class="chat-notification-logo" alt="Pacman">
-                    </div>
-                    <div class="chat-notification-content">
-                        <h4 class="chat-notification-title">Pacman is here!</h4>
-                        <p class="chat-notification-message">Click on the button below to start the rain!</p>
-                    </div>
-
-                </div>
-
-            </div>
-            
           </section>
         <!-- Vision Section -->
         <section id="vision" class="my-8">
@@ -178,6 +160,7 @@
         <!-- Events Section -->
         <section id="events" class="my-8">
             <h2 class="text-3xl font-semibold text-center text-green-700 mb-8">Events</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8DQeFmWUyd8?si=xR40K5vJaVRN-KQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p class="text-center text-gray-600 mb-8">Participate in local and global Earth Day events to take action towards a sustainable future. Check out the <a href="https://allmylinks.com/kevin-marville" class="text-green-600 hover:underline">app store</a> for more details.</p>
         </section>
 
@@ -241,30 +224,65 @@
         function getChatbotResponse() {
             const userInput = document.getElementById('userInput').value;
             if (userInput.trim() === '') return;
-
+        
             const bubbleContainer = document.querySelector('.bubble-container');
-
+        
             const userBubble = document.createElement('div');
             userBubble.classList.add('bubble', 'sent');
             userBubble.innerHTML = `<p>${userInput}</p>`;
             bubbleContainer.insertBefore(userBubble, bubbleContainer.querySelector('.input-container'));
-
+        
             document.getElementById('userInput').value = '';
-
+        
             const typingIndicator = document.createElement('div');
             typingIndicator.classList.add('typing');
             typingIndicator.innerHTML = '<div class="dot"></div><div class="dot"></div><div class="dot"></div>';
             bubbleContainer.insertBefore(typingIndicator, bubbleContainer.querySelector('.input-container'));
-
+        
             setTimeout(() => {
                 bubbleContainer.removeChild(typingIndicator);
-
-                const botBubble = document.createElement('div');
-                botBubble.classList.add('bubble', 'received');
-                botBubble.innerHTML = '<p>This is a response from the bot.</p>';
-                bubbleContainer.insertBefore(botBubble, bubbleContainer.querySelector('.input-container'));
+        
+                const botBubble1 = document.createElement('div');
+                botBubble1.classList.add('bubble', 'received');
+                botBubble1.innerHTML = '<p>This is a response from the Earth 🌍.</p>';
+                bubbleContainer.insertBefore(botBubble1, bubbleContainer.querySelector('.input-container'));
+        
+                const botBubble2 = document.createElement('div');
+                botBubble2.classList.add('bubble', 'received');
+                botBubble2.innerHTML = '<p>This is love from 🌎.</p>';
+                bubbleContainer.insertBefore(botBubble2, bubbleContainer.querySelector('.input-container'));
+        
+                const botBubble3 = document.createElement('div');
+                botBubble3.classList.add('bubble', 'received');
+                botBubble3.innerHTML = '<p>This day we celebrate from 🌏.</p>';
+                bubbleContainer.insertBefore(botBubble3, bubbleContainer.querySelector('.input-container'));
+        
+                animateGlobe();
             }, 2000);
         }
+        
+        function animateGlobe() {
+            const globeDiv = document.createElement('div');
+            globeDiv.classList.add('globe-animation');
+            globeDiv.style.width = '100px';
+            globeDiv.style.height = '100px';
+            globeDiv.style.backgroundImage = "url('assets/pictures/globe.png')";
+            globeDiv.style.backgroundSize = 'cover';
+            globeDiv.style.borderRadius = '50%';
+            globeDiv.style.animation = 'spin 4s linear infinite';
+        
+            document.body.appendChild(globeDiv);
+        
+            setTimeout(() => {
+                document.body.removeChild(globeDiv);
+            }, 8000);
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
 
         document.addEventListener("DOMContentLoaded", () => {
             if (!document.querySelector(".warning-div")) {
