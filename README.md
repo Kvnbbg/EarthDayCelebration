@@ -51,14 +51,23 @@ This front-end challenge was hosted on dev.to on April 29, 2024. Special thanks 
 
 - **Organizers**: [dev.to](https://dev.to)
 - **Challenge Creator**: [dev.to](https://dev.to)
-- **Participants**: [@Kvnbbg](https://kvnbbg.fr)
+- **Participants**: [@Kvnbbg](https://www.instagram.com/techandstream)
+- **Participants**: [@Kvnbbg](https://www.instagram.com/kevinmarville)
+
+### Next Challenge end. 2024
 
 We extend our gratitude to everyone involved in making this challenge a success and fostering a supportive community of developers.
+
+**A LLM-powered digital assistant for VALORANT Esports team management, try it now**: 
+- [StreamSprout](https://kvnbbg.github.io/StreamSprout/)
+- [StreamSprout Git](https://github.com/Kvnbbg/StreamSprout)
+- [Commentary from participants](https://www.linkedin.com/in/kevinmarville)
 
 ## Credits
 
 - [EARTHDAY.ORG](https://www.earthday.org/) - For providing valuable information and resources for Earth Day celebrations.
 - [Marlee Matlin](https://en.wikipedia.org/wiki/Marlee_Matlin) - For the inspirational quote featured in the application.
+- Me :D
 
 ## License
 
